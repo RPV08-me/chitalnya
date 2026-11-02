@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="книга_флавикон.webp" type="image/x-icon">
+    <link rel="stylesheet" href="reg.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Читальня</div>
+            <div class="logo_litle">Библиотека рядом</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="reg.html" class="active">Регистрация</a></li>
+                    <li><a href="books.html">Книги</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="register">
+                <div class="register_info">
+                    <img class="register_image" src="Регистрация.webp">
+                    <h2>Ваша следующая история начинается здесь.</h2>
+                    <p>Один читательский билет — тысячи новых миров.<br>Запишитесь онлайн и заберите первую книгу в удобный день.</p>
+                </div>
+                <div class="register_form">
+                    <h1>Стать читателем</h1>
+                    
+                    <form action="#" method="POST">
+                        <div class="form_group">
+                            <label for="surname">Фамилия</label>
+                            <input type="text" id="surname" name="surname" placeholder="Ваша фамилия" required>
+                        </div>
+
+                        <div class="form_row">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="patronymic">Отчество</label>
+                                <input type="text" id="patronymic" name="patronymic" placeholder="Ваше отчество">
+                            </div>
+                        </div>
+
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="email">Почта</label>
+                                <input type="email" id="email" name="email" placeholder="name@mail.ru" required>
+                            </div>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="password">Пароль</label>
+                            <div class="password_wrapper">
+                                <input type="password" id="password" name="password" placeholder="Не менее 8 символов" required minlength="8">
+                                <button type="button" class="password_toggle" aria-label="Показать пароль">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn_submit">Зарегистрироваться</button>
+
+                        <div class="login_link">Уже есть читательский билет?</div>
+                        
+                        <button type="button" class="btn_login">Авторизоваться</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_first">
+                    <h2>Место, где можно не спешить.</h2>
+                    <p>Приходите за любимыми историями, тёплыми встречами и временем для себя.</p>
+                </div>
+                <div class="footer_second">
+                    <h4>Библиотека</h4>
+                    <ul class="footer_links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="reg.html" >Регистрация</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer_third">
+                    <h4>Будем на связи</h4>
+                    <p>+7 (812) 555-14-28<br>
+                    chitalnya@yandex.ru<br>
+                    Санкт-Петербург, ул. Моховая, 18<br>
+                    Вт–вс: 10:00–20:00 · Понедельник — выходной</p>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <img class="social_links" src="MAX.webp">
+                    
+                <div class="footer_logo">
+                    <div class="logo">Читальня</div>
+                </div>
+                <img class="social_links" src="ВКонтакте.webp">
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
