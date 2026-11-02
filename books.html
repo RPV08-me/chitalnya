@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="книга_флавикон.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="books.css">
+    <title>Книги</title>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="logo">Читальня</div>
+            <div class="logo_litle">Библиотека рядом</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="reg.html">Регистрация</a></li>
+                    <li><a href="books.html" class="active">Книги</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="catalog_header">
+                <span class="logo_litle">Каталог библиотеки</span>
+                <h1>Ваша следующая любимая книга</h1>
+            </div>
+            <section class="shelf_section">
+                <h2 class="shelf_title">Золотая полка</h2>
+                <div class="books_grid">
+                    <div class="book_card reveal delay_1">
+                        <img class="book_image" src="Капитанская_дочка.webp" alt="Капитанская дочка">
+                        <div class="book_content">
+                            <h3 class="book_title">Капитанская дочка</h3>
+                            <div class="book_author">Александр Пушкин</div>
+                            <p class="book_desc">История чести, первой любви и выбора на фоне пугачёвского восстания.</p>
+                            <button class="btn open-modal-btn" data-book-id="1">Забронировать</button>
+                            <a href="book1.html" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_2">
+                        <img class="book_image" src="Дубровский.webp" alt="Дубровский">
+                        <div class="book_content">
+                            <h3 class="book_title">Дубровский</h3>
+                            <div class="book_author">Александр Пушкин</div>
+                            <p class="book_desc">Молодой дворянин, потерявший дом, ищет справедливость и встречает любовь.</p>
+                            <button class="btn open-modal-btn" data-book-id="2">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_3">
+                        <img class="book_image" src="Онегин.webp" alt="Евгений Онегин">
+                        <div class="book_content">
+                            <h3 class="book_title">Евгений Онегин</h3>
+                            <div class="book_author">Александр Пушкин</div>
+                            <p class="book_desc">Петербургский свет, тихая усадьба и письмо, изменившее две судьбы.</p>
+                            <button class="btn open-modal-btn" data-book-id="3">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="shelf_section">
+                <h2 class="shelf_title">О самом важном</h2>
+                <div class="books_grid">
+                    <div class="book_card reveal delay_1">
+                        <img class="book_image" src="Белые_ночи.webp" alt="Белые ночи">
+                        <div class="book_content">
+                            <h3 class="book_title">Белые ночи</h3>
+                            <div class="book_author">Фёдор Достоевский</div>
+                            <p class="book_desc">Четыре петербургские ночи мечтателя: о близости, надежде и мимолётном счастье.</p>
+                            <button class="btn open-modal-btn" data-book-id="4">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_2">
+                        <img class="book_image" src="Ася.webp" alt="Ася">
+                        <div class="book_content">
+                            <h3 class="book_title">Ася</h3>
+                            <div class="book_author">Иван Тургенев</div>
+                            <p class="book_desc">Летнее путешествие по Рейну и хрупкое чувство, которому не хватило одного слова.</p>
+                            <button class="btn open-modal-btn" data-book-id="5">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_3">
+                        <img class="book_image" src="Первая_любовь.webp" alt="Первая любовь">
+                        <div class="book_content">
+                            <h3 class="book_title">Первая любовь</h3>
+                            <div class="book_author">Иван Тургенев</div>
+                            <p class="book_desc">Воспоминание о дачном лете, юности и первом большом чувстве.</p>
+                            <button class="btn open-modal-btn" data-book-id="6">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="shelf_section">
+                <h2 class="shelf_title">Дом, дорога, память</h2>
+                <div class="books_grid">
+                    <div class="book_card reveal delay_1">
+                        <img class="book_image" src="Вишневый_сад.webp" alt="Вишнёвый сад">
+                        <div class="book_content">
+                            <h3 class="book_title">Вишнёвый сад</h3>
+                            <div class="book_author">Антон Чехов</div>
+                            <p class="book_desc">Старый дом, цветущий сад и люди на пороге новой жизни.</p>
+                            <button class="btn open-modal-btn" data-book-id="7">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_2">
+                        <img class="book_image" src="Степь.webp" alt="Степь">
+                        <div class="book_content">
+                            <h3 class="book_title">Степь</h3>
+                            <div class="book_author">Антон Чехов</div>
+                            <p class="book_desc">Путь маленького Егорушки через бескрайнюю степь — навстречу незнакомому миру.</p>
+                            <button class="btn open-modal-btn" data-book-id="8">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                    <div class="book_card reveal delay_3">
+                        <img class="book_image" src="Антоновские_яблоки.webp" alt="Антоновские яблоки">
+                        <div class="book_content">
+                            <h3 class="book_title">Антоновские яблоки</h3>
+                            <div class="book_author">Иван Бунин</div>
+                            <p class="book_desc">Аромат осеннего сада, усадебная жизнь и светлая память об ушедшем.</p>
+                            <button class="btn open-modal-btn" data-book-id="9">Забронировать</button>
+                            <a href="#" class="read_online">Прочитать онлайн</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_first">
+                    <h2>Место, где можно не спешить.</h2>
+                    <p>Приходите за любимыми историями, тёплыми встречами и временем для себя.</p>
+                </div>
+                <div class="footer_second">
+                    <h4>Библиотека</h4>
+                    <ul class="footer_links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="reg.html">Регистрация</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer_third">
+                    <h4>Будем на связи</h4>
+                    <p>+7 (812) 555-14-28<br>
+                    chitalnya@yandex.ru<br>
+                    Санкт-Петербург, ул. Моховая, 18<br>
+                    Вт–вс: 10:00–20:00 · Понедельник — выходной</p>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <img class="social_links" src="MAX.webp" alt="MAX">
+                <div class="footer_logo">
+                    <div class="logo">Читальня</div>
+                </div>
+                <img class="social_links" src="ВКонтакте.webp" alt="ВКонтакте">
+            </div>
+        </div>
+    </footer>
+    <div class="modal_overlay" id="bookingModal">
+        <div class="modal_window">
+            <button class="modal_close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <span class="modal_header">Книга будет вас ждать</span>
+            <h2 class="modal_title">Забронировать книгу</h2>
+
+            <form class="booking_form" action="#" method="POST">
+                <div class="form_group">
+                    <label for="fullname">ФИО</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Соколова Анна Сергеевна" required>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="email">Почта</label>
+                        <input type="email" id="email" name="email" placeholder="anna.sokolova@mail.ru" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (921) 555-24-18" required>
+                    </div>
+                </div>
+
+                <p class="form_notice">
+                    Заберите книгу в «Читальне» на Моховой, 18.
+                </p>
+                <p class="form_notice">
+                    Срок чтения — 21 день.
+                </p>
+
+                <button type="submit" class="btn_submit">Подтвердить бронирование</button>
+                <button type="button" class="btn_cancel">Вернуться к выбору книг</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
