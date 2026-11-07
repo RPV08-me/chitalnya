@@ -220,6 +220,10 @@ input:focus {
     border-color: #6e533d;
 }
 
+.btn_login a {
+    text-decoration: none;
+} 
+
 footer {
     background-color: #5c4433;
     color: #f3ebd9;
