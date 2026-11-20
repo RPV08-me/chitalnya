@@ -383,24 +383,6 @@ footer {
     height: 24px;
 }
 
-@media (max-width: 992px) {
-    .profile_card {
-        flex-direction: column;
-        align-items: center;
-    }
-    .profile_form {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-    }
-    .profile_form .form_group.full_width {
-        grid-column: span 2;
-    }
-    .footer_content {
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-}
-
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
@@ -414,14 +396,25 @@ footer {
         align-items: flex-start;
         gap: 20px;
     }
-    .profile_form {
-        grid-template-columns: 1fr;
-    }
-    .profile_form .form_group.full_width {
-        grid-column: span 1;
+
+    .profile_info,
+    .user_info,
+    .profile_details {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        width: 100%;
+        gap: 16px;
     }
+    .profile_info .form_group,
+    .user_info .form_group,
+    .profile_details .form_group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 0;
+    }
+
     .book_list_item {
         flex-direction: column;
         align-items: flex-start;
@@ -433,11 +426,22 @@ footer {
     .status_badge {
         margin-top: 10px;
     }
+
     .footer_content {
         flex-direction: column;
     }
     .footer_bottom {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .profile_form {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+    .profile_form .form_group,
+    .profile_form .form_group.full_width {
+        grid-column: span 1 !important;
+        width: 100%;
     }
 }

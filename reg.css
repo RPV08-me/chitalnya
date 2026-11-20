@@ -310,19 +310,21 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .register_wrapper {
+    .register {
         flex-direction: column;
         align-items: center;
     }
     .register_info {
         max-width: 100%;
         text-align: center;
+        order: 1;
     }
     .register_image {
         height: 350px;
     }
     .register_form {
         width: 100%;
+        order: 2;
     }
     .footer_content {
         flex-wrap: wrap;
@@ -344,6 +346,15 @@ footer {
     }
     .register_form {
         padding: 30px 20px;
+    }
+    .register {
+        flex-direction: column;
+    }
+    .register_info {
+        order: 1;
+    }
+    .register_form {
+        order: 2;
     }
     .footer_content {
         flex-direction: column;
